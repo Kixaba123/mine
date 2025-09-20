@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineFlow - Novo Relatório</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="back-link"><a href="dashboard.html">← Voltar para o Painel</a></h1>
+        <h1>Criar Novo Relatório</h1>
+
+        <div class="section-header">
+            <h2>Dados do Relatório</h2>
+            <div class="form-group">
+                <label for="relatorio-data">Data:</label>
+                <input type="date" id="relatorio-data" required>
+            </div>
+            <div class="form-group">
+                <label for="lider">Líder:</label>
+                <input type="text" id="lider" required>
+            </div>
+            <div class="form-group">
+                <label for="executante">Executante:</label>
+                <input type="text" id="executante" required>
+            </div>
+            <div class="form-group">
+                <label for="escala-trabalho">Escala de Trabalho:</label>
+                <select id="escala-trabalho" required>
+                    <option value="">Selecione</option>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="X">X</option>
+                    <option value="Y">Y</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="turno-manutencao">Turno da Manutenção:</label>
+                <select id="turno-manutencao" required>
+                    <option value="">Selecione</option>
+                    <option value="06:00 - 18:00">06:00 - 18:00</option>
+                    <option value="18:00 - 06:00">18:00 - 06:00</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="servicos-container">
+            </div>
+
+        <button id="add-servico-btn"> + Adicionar Novo Serviço </button>
+        <button id="enviar-btn">Salvar Relatório</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

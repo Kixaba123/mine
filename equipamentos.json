@@ -1,0 +1,23 @@
+[
+  {
+    "tag": "CB-338",
+    "tipo": "Caminhão Fora de Estrada",
+    "horimetro": "14000",
+    "modelo": "Caterpillar 797",
+    "localizacao": "Mina"
+  },
+  {
+    "tag": "PC-125",
+    "tipo": "Pá Carregadeira",
+    "horimetro": "8500",
+    "modelo": "Komatsu WA600",
+    "localizacao": "Oficina Mecânica"
+  },
+  {
+    "tag": "ES-042",
+    "tipo": "Escavadeira Hidráulica",
+    "horimetro": "12200",
+    "modelo": "Hitachi EX200",
+    "localizacao": "Mina"
+  }
+]

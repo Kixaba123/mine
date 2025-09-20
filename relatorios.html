@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineFlow - Relatórios Salvos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+        #relatorios-lista {
+            list-style: none;
+            padding: 0;
+        }
+        .relatorio-item {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            background-color: #f9f9f9;
+        }
+        .relatorio-item h3 {
+            margin-top: 0;
+            color: #004d99;
+        }
+        .relatorio-item button {
+            margin-right: 10px;
+            padding: 8px 12px;
+            font-size: 0.9em;
+            cursor: pointer;
+        }
+        .whatsapp-btn {
+            background-color: #25d366;
+            color: white;
+            border: none;
+        }
+        .delete-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="back-link"><a href="dashboard.html">← Voltar para o Painel</a></h1>
+        <h1>Relatórios de Manutenção Salvos</h1>
+        
+        <ul id="relatorios-lista">
+            </ul>
+    </div>
+
+    <script src="relatorios.js"></script>
+</body>
+</html>

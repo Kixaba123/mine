@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-s1.0">
+    <title>MineFlow - Gerenciar Equipamentos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .container {
+            max-width: 900px;
+        }
+        .form-equipamento {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .form-equipamento h2 {
+            margin-top: 0;
+        }
+        .lista-equipamentos {
+            list-style: none;
+            padding: 0;
+        }
+        .lista-equipamentos li {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .lista-equipamentos li p {
+            margin: 0;
+        }
+        .lista-equipamentos li button {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1><a href="dashboard.html">← Voltar para o Painel</a></h1>
+        <h1>Gerenciar Equipamentos</h1>
+
+        <div class="form-equipamento">
+            <h2 id="form-titulo">Adicionar Novo Equipamento</h2>
+            <form id="equipamento-form">
+                <input type="hidden" id="equipamento-id">
+                <div class="form-group">
+                    <label for="tag">Tag do Equipamento:</label>
+                    <input type="text" id="tag" required>
+                </div>
+                <div class="form-group">
+                    <label for="horimetro">Horímetro:</label>
+                    <input type="number" id="horimetro" required>
+                </div>
+                <div class="form-group">
+                    <label for="localizacao">Localização:</label>
+                    <input type="text" id="localizacao" required>
+                </div>
+                <div class="form-group">
+                    <label for="descricao">Descrição (Opcional):</label>
+                    <textarea id="descricao" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="senha">Senha de Autorização:</label>
+                    <input type="password" id="senha" required>
+                </div>
+                
+                <button type="submit" id="submit-btn">Salvar Equipamento</button>
+                <button type="button" id="cancelar-btn" style="display:none;">Cancelar</button>
+            </form>
+        </div>
+
+        <h2>Equipamentos Cadastrados</h2>
+        <ul id="lista-equipamentos" class="lista-equipamentos">
+            <li>Nenhum equipamento cadastrado.</li>
+        </ul>
+    </div>
+
+    <script src="equipamentos.js"></script>
+</body>
+</html>
